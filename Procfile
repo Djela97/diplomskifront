@@ -1,1 +1,1 @@
-web: npm install --save axios vue-axios && npm run serve
+web: npm run serve
