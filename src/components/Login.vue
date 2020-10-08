@@ -50,7 +50,7 @@
                     'Accept': 'application/json',
                 };
               console.log(this.clientInput.mail + ' ' + this.clientInput.password);
-              axios.post("http://diplomski-quarkus.herokuapp.com/login", JSON.stringify(this.clientInput), {headers})
+              axios.post("https://diplomski-quarkus.herokuapp.com/login", JSON.stringify(this.clientInput), {headers})
               .then( (result) => {
                   console.log(result.data);
                   let payload = {
@@ -62,7 +62,7 @@
                   payload.username = result.data.username;
                   payload.folders = result.data.folders;
                   window.name = JSON.stringify(payload);
-                  window.location.href = 'http://localhost:4001/inbox';
+                  window.location.href = 'https://localhost:4001/inbox';
               })
               .catch( (error) =>{
                   console.log(error);
