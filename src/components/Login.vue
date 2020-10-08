@@ -53,7 +53,7 @@
                     'Accept': 'application/json',
                 };
               console.log(this.clientInput.mail + ' ' + this.clientInput.password);
-              axios.post("http://localhost:8080/login", JSON.stringify(this.clientInput), {headers})
+              axios.post("http://diplomski-quarkus.herokuapp.com/login", JSON.stringify(this.clientInput), {headers})
               .then( (result) => {
                   console.log(result.data);
                   let payload = {
