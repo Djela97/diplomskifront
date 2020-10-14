@@ -62,7 +62,7 @@
                         // window.name = JSON.stringify(payload);
                         this.$alert("Success");
                         // window.location.href = 'https://localhost:4000/login';
-                        window.location.href = 'https://diplomski-quarkus.herokuapp.com/login';
+                        window.location.href = 'https://diplomski-login.herokuapp.com/login';
                     })
                     .catch((error) => {
                         console.log(error);
