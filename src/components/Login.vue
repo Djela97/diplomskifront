@@ -63,6 +63,7 @@
                   payload.folders = result.data.folders;
                   window.name = JSON.stringify(payload);
                   window.location.href = 'https://diplomski-mailbox.herokuapp.com/inbox';
+                  // window.location.href = 'http://localhost:4001/inbox';
               })
               .catch( (error) =>{
                   console.log(error);

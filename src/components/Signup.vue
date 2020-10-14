@@ -61,7 +61,8 @@
                         // payload.folders = result.data.folders;
                         // window.name = JSON.stringify(payload);
                         this.$alert("Success");
-                        window.location.href = 'https://localhost:4000/login';
+                        // window.location.href = 'https://localhost:4000/login';
+                        window.location.href = 'https://diplomski-quarkus.herokuapp.com/login';
                     })
                     .catch((error) => {
                         console.log(error);
